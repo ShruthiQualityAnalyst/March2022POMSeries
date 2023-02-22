@@ -1,0 +1,23 @@
+package com.abc.cart.base;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
+
+import com.abc.cart.driverFactory.DriverFactory;
+
+public class BaseTest {
+	
+	public DriverFactory df;
+	WebDriver driver;
+	
+	@BeforeTest
+	public void setup(){	
+		
+		//df = new Driverfactory();
+		
+		df = new DriverFactory();
+		driver = df.init_driver("chrome");
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.qa.opencart.errors;
+
+public class AppErrors {
+
+	System.out.println("e");
+}
